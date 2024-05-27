@@ -344,7 +344,7 @@ img {
   background-color: var(--first-color);
   color: #fff;
   padding: 1rem 0;
-  width: 100%;
+  width: 45%;
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
   transition: 0.3s;
@@ -523,3 +523,57 @@ img {
 }
 
 
+
+
+
+
+
+/*extension of skills */
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align to the left side */
+  width: 100%;
+  max-width: 1200px; /* Set a max-width for better alignment */
+  margin: auto;
+}
+
+.skills__text-container {
+  width: 100%;
+  margin-bottom: 20px; /* Add some space between the text and skills */
+}
+
+.skills__columns {
+  display: flex;
+  justify-content: space-between; /* Equal spacing between columns */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.skills__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+  width: 48%; /* Ensure the columns take up equal space */
+}
+
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 0; /* Remove border radius */
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Make font bold */
+}
+
+.skills__item:before {
+  content: '○'; /* Use a white circle bullet point */
+  color: #ffffff; /* Bullet color white */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+  text-align: center; /* Center the bullet points */
+}
