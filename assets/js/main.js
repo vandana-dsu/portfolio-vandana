@@ -55,3 +55,34 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+
+
+//====home====
+// Define an array of career titles
+const careerTitles = [
+    "Aspiring",
+    "Cloud Engineer","DevOps Engineer",
+    "Web Developer",
+    // Add more career titles as needed
+];
+
+// Initialize index for cycling through career titles
+let currentIndex = 0;
+
+// Function to update the career title
+function updateCareerTitle() {
+    // Get the career title element
+    const careerTitleElement = document.getElementById('careerTitle');
+    // Update the text with the current career title
+    careerTitleElement.textContent = careerTitles[currentIndex];
+    // Increment the index or reset to 0 if it reaches the end of the array
+    currentIndex = (currentIndex + 1) % careerTitles.length;
+}
+
+// Call the updateCareerTitle function initially
+updateCareerTitle();
+
+// Set an interval to update the career title every 3 seconds
+setInterval(updateCareerTitle, 3000);
