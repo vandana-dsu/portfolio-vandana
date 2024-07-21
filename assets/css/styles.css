@@ -9,7 +9,7 @@
   /* HSL color mode */
   --hue-color: 340; /* Change to pink */
   --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: #ffffff; /* Change text color to white */
+  --second-color: #1d1c1c; /* Change text color to white */
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
