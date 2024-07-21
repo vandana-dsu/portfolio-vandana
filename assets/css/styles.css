@@ -579,3 +579,18 @@ img {
 }
 
 
+
+/* For the text below an image */
+.work__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* Adjust the gap between items */
+}
+
+.work__item {
+  text-align: center;
+}
+
+.work__description {
+  margin-top: 10px; /* Add margin top to create space between image and text */
+}
